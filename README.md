@@ -1,4 +1,7 @@
 "# animais-fantasticos-origamid" 
+
+
+
 Projeto desenvolvido atráves do curso "JavaScript Completo ES6" da Origamid.
 
 O curso vai do básico ao avançado e ao final dele será adiqurido uma compreensão 
