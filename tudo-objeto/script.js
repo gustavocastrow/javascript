@@ -19,4 +19,4 @@ var btn = document.querySelector('.btn');
 // innerHTML
 // id
 // outerHTML
-console.log(btn);
+
