@@ -1,63 +1,90 @@
-//String -> E a construtora de strings, toda string possui as propriedades e 
-//metodos do prototype de String.
+//Exercicios
 
-const comida = 'Pizza';
-const agua = new String('Agua');
+//Utilizando o forEach na array abaixo, some os valores de taxa e os valores
+//de recebimento
 
-console.log('oi')
+const transacoes = [
+  {
+    descricao: 'Taxa do Pao',
+    valor: 'R$ 39'
+  },
+  {
+    descricao: 'Taxa do Mercado',
+    valor: 'R$ 129'
+  },
+  {
+    descricao: 'Recebimento de Cliente',
+    valor: 'R$ 99'
+  },
+  {
+    descricao: 'Recebimento do Banco1',
+    valor: 'R$ 199'
+  },
+  {
+    descricao: 'Taxa do Cliente',
+    valor: 'R$ 49'
+  }
+];
 
-//str.lenght -> propriedade com o total de caracteres da string
+let taxaTotal = 0;
+let recebimentoTotal = 0;
 
-const frase = 'A melhor comida';
+transacoes.forEach((item) => {
+  const numeroLimpo = +item.valor.replace('R$', ''); //limpando valor, tirando R$ e espaco
+  //e utilizando o "+" para converter em numero
+  if(item.descricao.slice(0, 4) === 'Taxa'){//verifica se o inicio da descricao
+  //e igual a palavra TAXA (4 letras);
+    taxaTotal = taxaTotal + numeroLimpo;
+  } else if(item.descricao.slice(0, 4) === 'Race') {
+    recebimentoTotal += numeroLimpo;
+  }
+});
 
-comida.length; //5
-frase.length; //15
-
-comida[0] //P
-frase[0] //A
-frase[frase.length - 1] //a 
-
-//str.chartAt(n) -> Retorna o caracter de acordo com o index n (n);
-
-const linguagem = 'Javascript';
-
-linguagem.charAt(0); //J
-linguagem.charAt(2); //v
-linguagem.charAt(linguagem.length - 1); //t
-
-//str.concat(str2, str3,...) -> Concatena as string e retorna o resultado
-
-const frase01 = 'A melhor linguagem é ';
-const fraseCompleta = frase01.concat(linguagem, '!!')
+console.log(taxaTotal);
+console.log(recebimentoTotal);
 
 
-//str.includes(search, position) -> Procura pela string exata dentro de outra
-//string, a procura e case sensitive
+//Retorne uma array com a lista abaixo
 
-const fruta = 'Banana';
-const listaFrutas = 'Melancia, Banana, Laranja';
+const transportes = 'Carro;Aviao;Trem;Onibus;Bicicleta';
 
-listaFrutas.includes(fruta); //true
-fruta.includes(listaFrutas); //false
+const arrayTransportes = transportes.split(';');
+console.log(arrayTransportes);
 
-//str.endsWith(search) e str.startsWith(search) -> Procura pela string exata
-//dentro de outra string. A procura e case sensite
+//Substitua todos os spans por as
 
-fruta.endsWith('nana'); //true
-fruta.startsWith('Ba'); //true
-fruta.startsWith('na'); //false
+let html = `<ul>
+                  <li><span>Sobre</span></li>
+                  <li><span>Produtos</span></li>
+                  <li><span>Contato</span></li>
+                  <li><span>Mapa</span></li>
+                </ul>
+                `
+html = html.split('span').join('a');
+console.log(html);
 
-//str.slice(start, end) -> Corta a string de acordo com os valores de start
-//e end
 
-const transacao1 = 'Deposito de cliente';
-const transacao2 = 'Deposito de fornecedor';
-const transacao3 = 'Taxa de camisas';
+//Retorne o ultimo caractere da frase
 
-console.log(transacao1.slice(0, 3)); //Dep
-console.log(transacao2.slice(0, 3)); //Dep
-console.log(transacao3.slice(0, 3)); //Tax
+const frase = 'Melhor do Ano'
 
-console.log(transacao1.slice(12)); // cliente
-console.log(transacao1.slice(-4)); // ent
-console.log(transacao1.slice(3, 6)); // osi
+console.log(frase.slice(-1));
+
+//Retorne o total de taxas
+
+const transacoes2 = ['Taxa do Banco', '   Taxa do Pao', '  taxa do mercado',
+ 'deposito bancario', 'Tarifa especial'];
+
+ let taxasTotal = 0;
+ transacoes2.forEach((item) => {
+   item = item.toLocaleLowerCase(); //tudo para lowercase
+   item = item.trim(); //tirando espacos
+   item = item.slice(0, 4); //pegando as 4 primeiras leitras
+
+   if(item === 'taxa'){
+     taxasTotal++;
+   }
+ })
+
+
+ console.log(taxasTotal);
