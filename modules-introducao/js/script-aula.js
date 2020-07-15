@@ -22,6 +22,10 @@ console.log(div.dataset);
 //valido para nomear propriedades. Entao qualquer traco sera removido e a
 //letra seguinte transformada em maiuscula.
 
+//Use strict ->> O modo estrito previne que algumas acoes consideradas erros.
+//Basta adicionarmos 'use strict' no topo de um arquivo, que
+//ele entrata neste modo.
+
 
 
 
