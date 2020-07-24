@@ -33,6 +33,10 @@
       height: 150px;
     }
 
+    .invalido {
+      border-color: red;
+    }
+
   </style>
 
   <form name="contato" id="contato">
@@ -40,8 +44,8 @@
     <input type="text" name="nome" id="nome">
 
     <label for="email">Email</label>
-    <input type="email" name="email" id="email">
-
+    <input type="email" name="email" id="email" required>
+    <span class="erro"></span>
     <label for="mensagem">Mensagem</label>
     <textarea name="mensagem" id="mensagem"></textarea>
 
@@ -56,6 +60,13 @@
     const texto = document.querySelector('.texto');
 
     function handleKeyup(event){
+      const target = event.target;
+
+      if(!target.checkValidity()){
+        target.classList.add('invalido');
+        target.setCustomValidity('Esse campo e importe')
+        target.nextElementSibling.innerText = target.validationMessage;
+      }
       console.log(event.target.value);
       texto.innerText = event.target.value;
     }
