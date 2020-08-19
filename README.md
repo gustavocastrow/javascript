@@ -1,15 +1,15 @@
 
 
-# Repositório de estudo do curso de Javascript ES6+ da [Origamid](https://www.origamid.com/curso/javascript-completo-es6/).
+Repositório de estudo do curso de Javascript ES6+ da [Origamid](https://www.origamid.com/curso/javascript-completo-es6/).
 
-# :pushpin: Projetos desenvolvidos durante o curso JavaScript ES6+ 
+:pushpin: Projetos desenvolvidos durante o curso JavaScript ES6+ 
 
 * [Animais Fantásticos](https://github.com/gustavocastrow/animais-fantasticos)
 * [Slide](https://github.com/gustavocastrow/slide)
 
-# :rocket: Conteúdo abordado
+:rocket: Conteúdo abordado
 
-# JavaScript para Iniciantes - 02
+JavaScript para Iniciantes - 02
 * Variáveis
 * Tipos de Dados
 * Números e Operadores
@@ -21,7 +21,7 @@
 * Atribuição e Ternário
 * Escopo
 
-# DOM para Iniciantes - 03
+DOM para Iniciantes - 03
 * O que é o DOM
 * Seleção de Elementos
 * forEach e Arrow Function
@@ -31,7 +31,7 @@
 * Transversing e Manipulação
 * Navegação por Tabs
 
-# Objetos - 04
+Objetos - 04
 * Constructor Function
 * Prototype
 * Native, Host e User
@@ -43,7 +43,7 @@
 * Object
 
 
-# Efeitos no DOM - 05
+Efeitos no DOM - 05
 * Dataset
 * Modules
 * Event Bubble
@@ -51,7 +51,7 @@
 * Date Object
 * Forms
 
-# JavaScript Assíncrono - 06
+JavaScript Assíncrono - 06
 * JavaScript Assíncrono
 * Promises
 * Fetch
@@ -64,7 +64,7 @@
 * Get e Set
 * Extends
 
-# Mais JavaScript - 07
+Mais JavaScript - 07
 * Function Expression
 * Factory Function
 * Clojures e Debugging
@@ -72,13 +72,13 @@
 * Rest e Spread
 * Loops e Iterable
 
-# Regular Expression - 08
+Regular Expression - 08
 * Regexp Seleção
 * Regexp Substituição
 * Regexp Padrões
 * Regexp Métodos
 
-# Automação Front End - 09
+Automação Front End - 09
 * Linha de Comando
 * NPM
 * ESLint
@@ -86,7 +86,7 @@
 * Babel
 * Git
 
-# Refatorar Projeto Final 10
+Refatorar Projeto Final 10
 * Repositório Git
 * Refatorar Scroll
 * Refatorar Accordion
@@ -101,7 +101,7 @@
 * Refatorar Menu Mobile
 * Refatorar Funcionamento
 
-# Slide 11
+Slide 11
 * Slide Início
 * Slide Eventos
 * Slide Atualizar Distâncias
